@@ -12,7 +12,13 @@ import com.empresa.repository.ProductoRepository;
 @Service
 public class ProductoServiceImpl implements ProductoService {
 
+	@Autowired
+	private ProductoRepository repository;
 	
+	@Override
+	public List<Producto> listaProducto(String filtro, Pageable pageable) {
+		return repository.listaProducto(filtro, pageable);
+	}
 	
 
 }

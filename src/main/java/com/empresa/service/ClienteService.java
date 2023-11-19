@@ -9,5 +9,6 @@ import com.empresa.entidades.Cliente;
 public interface ClienteService {
 
 
+	public abstract List<Cliente> listaCliente (String filtro, Pageable pageable);
 	
 }
