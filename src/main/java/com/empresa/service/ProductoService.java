@@ -8,6 +8,6 @@ import com.empresa.entidades.Producto;
 
 public interface ProductoService {
 
-	public abstract List<Producto> listaproducto(String filtro, Pageable pegable);
+
 	
 }

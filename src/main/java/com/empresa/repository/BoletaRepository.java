@@ -10,7 +10,5 @@ import com.empresa.entidades.Boleta;
 
 public interface BoletaRepository extends JpaRepository<Boleta, Integer>{
 	
-	@Query("Select x from Boleta x where x.cliente.idCliente = :param_cli")
-	public abstract List<Boleta> listaBoleta(@Param("param_cli") int idCliente);
-	
+
 }
